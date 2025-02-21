@@ -1,8 +1,8 @@
-import pandas as pd
-import seaborn as sn
-import matplotlib.pyplot as plt
+import re
 
-data = pd.read_csv("diabetes.csv")
-sn.heatmap(data.corr(), annot=True)
-plt.show()
-# print(data)
+text =  "My phone number is +49 012345689. My brother's one is 0123465488"
+result = re.findall('\+?\d+\s?\d+', text)
+print(result)
+
+email = "My email is nhviet1009@gmail.com. I have another email, which is vietnguyen@sporttotal.com"
+print(re.findall('\w+\@\w+\.\w+', email))
