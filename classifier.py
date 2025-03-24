@@ -10,6 +10,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import classification_report
 from lazypredict.Supervised import LazyClassifier
+
 data = pd.read_csv('diabetes.csv')
 # profile = ProfileReport(data, title="Diabetes Report", explorative=True)
 # profile.to_file('report.html')
